@@ -13,112 +13,76 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_FOLDER = PROJECT_ROOT / "data" / "raw" / "All"
 OUTPUT_FOLDER = PROJECT_ROOT / "results" / "step1a"
 TABLE_FOLDER = OUTPUT_FOLDER / "tables"
-RAW_PLOT_FOLDER = OUTPUT_FOLDER / "figures" / "raw_traces"
-FOURIER_PLOT_FOLDER = OUTPUT_FOLDER / "figures" / "fourier_spectra"
+RAW_PLOT_FOLDER = OUTPUT_FOLDER / "figures" / "raw_trace_qc"
+FOURIER_PLOT_FOLDER = OUTPUT_FOLDER / "figures" / "fourier_qc"
+
+RAW_OUTPUT_PATH = TABLE_FOLDER / "all_lumicycle_raw_long_format.csv"
+ANALYSIS_OUTPUT_PATH = TABLE_FOLDER / "all_lumicycle_analysis_long_format.csv"
+SUMMARY_OUTPUT_PATH = TABLE_FOLDER / "recording_summary.csv"
+GAP_OUTPUT_PATH = TABLE_FOLDER / "sampling_gap_report.csv"
+EXCLUSION_OUTPUT_PATH = TABLE_FOLDER / "excluded_observations.csv"
 
 MAKE_RAW_PLOTS = True
 MAKE_FOURIER_PLOTS = True
-EXPECTED_SAMPLING_INTERVAL_MIN = 20
-SAMPLING_TOLERANCE_MIN = 5
-RECORDING_NODE_ROUND_MIN = 10
-SHORT_RECORDING_DAYS = 10
+EXPECTED_INTERVAL_MIN = 20.0
+INTERVAL_TOLERANCE_MIN = 1.0
+GAP_THRESHOLD_MIN = EXPECTED_INTERVAL_MIN + INTERVAL_TOLERANCE_MIN
+FOURIER_MIN_PERIOD_HOURS = 4.0
+FOURIER_MAX_PERIOD_HOURS = 80.0
+SMOOTHING_HOURS = 2.0
 
-NO_FORSKOLIN_SHORT_IDS = {
-    "2A-SCNM4M",
-    "2B-SCNM4R",
-    "5C-SCNM5",
-    "6D-SCNCM1",
-    "7C-SCNM6",
-    "8B-L4",
+EXPERIMENT_SCHEDULE = {
+    pd.Timestamp("2025-06-26"): pd.Timestamp("2025-07-03 17:24"),
+    pd.Timestamp("2025-07-03"): pd.Timestamp("2025-07-10 17:20"),
+    pd.Timestamp("2025-07-28"): pd.Timestamp("2025-08-04 17:19"),
+    pd.Timestamp("2025-08-11"): pd.Timestamp("2025-08-18 16:30"),
+    pd.Timestamp("2025-10-03"): pd.Timestamp("2025-10-10 17:11"),
 }
 
-REPORTED_RESTART_GROUPS = {
-    "2025-07-03 17:24": [
-        "1C-SCN",
-        "5C-T12",
-        "5D-T10",
-        "6A-T7",
-        "6B-T5",
-        "7C-L1",
-        "7D-L2",
-        "8A-L3",
-    ],
-    "2025-07-10 17:20": [
-        "1B-L1M2",
-        "1D-L2M2",
-        "2C-L3M2",
-        "2D-L4M2",
-        "3A-L5M2",
-        "3B-T10M2",
-        "4B-T12M2",
-        "4C-T5M1",
-        "4D-T7M1",
-        "5A-T10M1",
-        "5B-T12M2",
-        "6C-SCNMM1",
-        "7A-SCNMM2",
-        "7B-SCNCM2",
-        "8B-L2M1",
-        "8C-L3M1",
-        "8D-L4-1M1",
-    ],
-    "2025-08-04 17:19": [
-        "6A-SCNRM1",
-        "6B-SCNRM2",
-        "7A-SCNCM1",
-        "7B-SCNCM2",
-    ],
-    "2025-08-18 16:30": [
-        "1A-1FSCN",
-        "1B-2MSCN",
-        "1C-3FSCN",
-        "1D-4FSCN",
-        "2C-2ML1",
-        "2D-1FL2",
-        "3A-1FL4",
-        "3D-1FT10",
-        "4A-2MT10",
-        "4C-2MT5",
-        "4D-1FL4",
-        "5A-2ML2",
-        "5C-1FT7",
-        "6A-1FL1",
-        "6B-2ML3",
-        "7C-1FT12",
-        "7D-2MT12",
-        "8A-1FT5",
-        "8C-2ML4",
-        "8D-2MT7",
-    ],
-    "2025-10-10 17:11": [
-        "2A-M1SCN",
-        "2B-1MT7",
-        "2C-M1L1",
-        "2D-M1L4",
-        "4A-M2SCN",
-        "4B-M3SCN",
-    ],
+EXCLUDED_OBSERVATIONS = {
+    ("250728::6A-SCNrM1_Raw.csv", pd.Timestamp("2025-07-28 23:20")): (
+        "competing_observation_in_20min_sequence",
+        pd.Timestamp("2025-07-28 23:22"),
+    ),
+    ("250728::7A-SCNcM1_Raw.csv", pd.Timestamp("2025-07-28 15:42")): (
+        "competing_observation_in_20min_sequence",
+        pd.Timestamp("2025-07-28 15:45"),
+    ),
 }
 
+METADATA_COLUMNS = [
+    "recording_uid",
+    "recording_id",
+    "file",
+    "path",
+    "batch",
+    "position",
+    "sample_code",
+    "tissue",
+    "scn_region",
+    "spinal_region",
+    "level",
+]
 
-def normalize_recording_id(value):
-    return re.sub(r"\s+", "", str(value)).upper()
+
+def safe_filename(value):
+    return re.sub(r'[\\/:*?"<>|]+', "_", str(value))
 
 
 def parse_sample_name(sample_name):
     value = str(sample_name).strip().upper()
     if "SCN" in value:
         if "SCNC" in value:
-            scn_region = "caudal"
+            region = "caudal"
         elif "SCNM" in value:
-            scn_region = "medial"
+            region = "medial"
         elif "SCNR" in value:
-            scn_region = "rostral"
+            region = "rostral"
         else:
-            scn_region = "whole_or_unspecified"
+            region = "whole_or_unspecified"
         return {
             "tissue": "SCN",
-            "scn_region": scn_region,
+            "scn_region": region,
             "spinal_region": None,
             "level": None,
         }
@@ -131,16 +95,15 @@ def parse_sample_name(sample_name):
             "level": None,
         }
     level = match.group(1)
-    spinal_region = {
-        "C": "cervical",
-        "T": "thoracic",
-        "L": "lumbar",
-        "S": "sacral",
-    }[level[0]]
     return {
         "tissue": "DRG",
         "scn_region": None,
-        "spinal_region": spinal_region,
+        "spinal_region": {
+            "C": "cervical",
+            "T": "thoracic",
+            "L": "lumbar",
+            "S": "sacral",
+        }[level[0]],
         "level": level,
     }
 
@@ -155,83 +118,107 @@ def parse_filename(file_path):
         position = None
         sample_code = clean_name
     metadata = {
+        "recording_uid": f"{file_path.parent.name}::{file_path.name}",
+        "recording_id": clean_name,
         "file": file_path.name,
         "path": file_path.relative_to(PROJECT_ROOT).as_posix(),
         "batch": file_path.parent.name,
-        "recording_id": clean_name,
         "position": position,
         "sample_code": sample_code,
-        "recording_key": normalize_recording_id(clean_name),
-        "recording_uid": f"{file_path.parent.name}::{file_path.name}",
     }
     metadata.update(parse_sample_name(sample_code))
     return metadata
 
 
-def build_forskolin_schedule():
-    rows = []
-    for restart_text, recording_ids in REPORTED_RESTART_GROUPS.items():
-        restart = pd.Timestamp(restart_text)
-        for recording_id in recording_ids:
-            rows.append(
-                {
-                    "schedule_recording_id": recording_id,
-                    "recording_key": normalize_recording_id(recording_id),
-                    "reported_restart_datetime": restart,
-                }
-            )
-    schedule = pd.DataFrame(rows)
-    schedule.insert(0, "schedule_id", np.arange(len(schedule), dtype=int))
-    return schedule
-
-
-def read_recording(file_path, metadata):
+def read_recording(file_path):
+    metadata = parse_filename(file_path)
     data = pd.read_csv(file_path, header=1)
     data.columns = [str(column).strip() for column in data.columns]
-    data = data.rename(
-        columns={
-            "Time (days)": "time_days",
-            "counts/sec": "counts_sec",
-        }
-    )
-    missing = [
-        column
-        for column in ["Date", "Time (hr:min)", "time_days", "counts_sec"]
-        if column not in data.columns
-    ]
+    data = data.rename(columns={"Time (days)": "time_days", "counts/sec": "counts_sec"})
+    required = ["Date", "Time (hr:min)", "time_days", "counts_sec"]
+    missing = [column for column in required if column not in data.columns]
     if missing:
-        raise ValueError(f"{metadata['path']}: missing required columns {missing}")
-    data = data[["Date", "Time (hr:min)", "time_days", "counts_sec"]].copy()
+        raise ValueError(f"{metadata['path']} is missing columns: {missing}")
+    data = data[required].copy()
+    data.insert(0, "source_row", np.arange(len(data), dtype=int))
     data["time_days"] = pd.to_numeric(data["time_days"], errors="coerce")
     data["counts_sec"] = pd.to_numeric(data["counts_sec"], errors="coerce")
-    datetime_text = (
+    data["measurement_datetime"] = pd.to_datetime(
         data["Date"].astype(str).str.strip()
         + " "
-        + data["Time (hr:min)"].astype(str).str.strip()
+        + data["Time (hr:min)"].astype(str).str.strip(),
+        errors="coerce",
     )
-    data["measurement_datetime"] = pd.to_datetime(datetime_text, errors="coerce")
-    valid_datetime = data["measurement_datetime"].notna()
-    data.loc[valid_datetime, "Date"] = data.loc[
-        valid_datetime, "measurement_datetime"
-    ].dt.strftime("%Y-%m-%d")
-    for key, value in metadata.items():
-        data[key] = value
+    valid = data["measurement_datetime"].notna()
+    data.loc[valid, "Date"] = data.loc[valid, "measurement_datetime"].dt.strftime("%Y-%m-%d")
+    for column, value in metadata.items():
+        data[column] = value
     return data
 
 
-def build_recording_overview(raw_all):
+def build_raw_table():
+    files = sorted(DATA_FOLDER.rglob("*.csv"))
+    if not files:
+        raise FileNotFoundError(f"No CSV files found under {DATA_FOLDER}")
+    raw = pd.concat([read_recording(file_path) for file_path in files], ignore_index=True)
+    if raw["measurement_datetime"].isna().any():
+        bad = raw.loc[raw["measurement_datetime"].isna(), ["path", "source_row"]]
+        raise ValueError(f"Missing measurement times: {bad.to_dict('records')}")
+    if raw["time_days"].isna().any():
+        bad = raw.loc[raw["time_days"].isna(), ["path", "source_row"]]
+        raise ValueError(f"Missing elapsed times: {bad.to_dict('records')}")
+    if raw["counts_sec"].isna().any():
+        bad = raw.loc[raw["counts_sec"].isna(), ["path", "source_row"]]
+        raise ValueError(f"Missing counts: {bad.to_dict('records')}")
+    return raw
+
+
+def exclude_conflicting_observations(raw):
+    excluded_rows = []
+    excluded_indices = []
+    for (recording_uid, timestamp), (reason, retained_timestamp) in EXCLUDED_OBSERVATIONS.items():
+        match = raw.index[
+            raw["recording_uid"].eq(recording_uid)
+            & raw["measurement_datetime"].eq(timestamp)
+        ]
+        retained = raw.index[
+            raw["recording_uid"].eq(recording_uid)
+            & raw["measurement_datetime"].eq(retained_timestamp)
+        ]
+        if len(match) != 1 or len(retained) != 1:
+            raise RuntimeError(
+                f"Unable to resolve exclusion {recording_uid} at {timestamp}: "
+                f"excluded={len(match)}, retained={len(retained)}"
+            )
+        row = raw.loc[match[0], [
+            "recording_uid",
+            "recording_id",
+            "file",
+            "path",
+            "batch",
+            "source_row",
+            "Date",
+            "Time (hr:min)",
+            "measurement_datetime",
+            "time_days",
+            "counts_sec",
+        ]].to_dict()
+        row["exclusion_reason"] = reason
+        row["retained_conflicting_observation_datetime"] = retained_timestamp
+        excluded_rows.append(row)
+        excluded_indices.append(match[0])
+    exclusions = pd.DataFrame(excluded_rows)
+    analysis = raw.drop(index=excluded_indices).copy().reset_index(drop=True)
+    return analysis, exclusions
+
+
+def build_recording_overview(raw, analysis):
+    raw_counts = raw.groupby("recording_uid", dropna=False).size().rename("n_raw_observations")
+    analysis_counts = (
+        analysis.groupby("recording_uid", dropna=False).size().rename("n_analysis_observations")
+    )
     overview = (
-        raw_all.groupby(
-            [
-                "recording_uid",
-                "path",
-                "batch",
-                "file",
-                "recording_id",
-                "recording_key",
-            ],
-            dropna=False,
-        )
+        raw.groupby(METADATA_COLUMNS, dropna=False)
         .agg(
             recording_start_datetime=("measurement_datetime", "min"),
             recording_end_datetime=("measurement_datetime", "max"),
@@ -240,447 +227,241 @@ def build_recording_overview(raw_all):
         )
         .reset_index()
     )
-    overview["recording_duration_days"] = (
-        overview["max_time_days"] - overview["min_time_days"]
-    )
-    normalized_short_ids = {
-        normalize_recording_id(value) for value in NO_FORSKOLIN_SHORT_IDS
-    }
-    overview["confirmed_no_forskolin"] = (
-        overview["recording_key"].isin(normalized_short_ids)
-        & (overview["recording_duration_days"] < SHORT_RECORDING_DAYS)
-    )
-    return overview, normalized_short_ids
-
-
-def assign_forskolin(row, schedule):
-    if row["confirmed_no_forskolin"]:
-        return pd.Series(
-            {
-                "forskolin_status": "not_administered",
-                "matched_schedule_id": pd.NA,
-                "reported_restart_datetime": pd.NaT,
-                "n_schedule_candidates": 0,
-            }
-        )
-    candidates = schedule[schedule["recording_key"] == row["recording_key"]]
-    start = row["recording_start_datetime"]
-    end = row["recording_end_datetime"]
-    if pd.isna(start) or pd.isna(end):
-        candidates = candidates.iloc[0:0]
-    else:
-        candidates = candidates[
-            candidates["reported_restart_datetime"].between(start, end)
-        ]
-    if len(candidates) == 1:
-        match = candidates.iloc[0]
-        return pd.Series(
-            {
-                "forskolin_status": "administered_estimated",
-                "matched_schedule_id": int(match["schedule_id"]),
-                "reported_restart_datetime": match["reported_restart_datetime"],
-                "n_schedule_candidates": 1,
-            }
-        )
-    return pd.Series(
-        {
-            "forskolin_status": (
-                "missing_schedule" if len(candidates) == 0 else "ambiguous_schedule"
-            ),
-            "matched_schedule_id": pd.NA,
-            "reported_restart_datetime": pd.NaT,
-            "n_schedule_candidates": len(candidates),
-        }
-    )
-
-
-def empty_forskolin_interval(restart_on_node=pd.NA):
-    return pd.Series(
-        {
-            "restart_on_file_20min_node": restart_on_node,
-            "forskolin_window_start_datetime": pd.NaT,
-            "forskolin_window_end_datetime": pd.NaT,
-            "forskolin_estimated_datetime": pd.NaT,
-        }
-    )
-
-
-def derive_forskolin_interval(row, raw_all):
-    if row["forskolin_status"] != "administered_estimated":
-        return empty_forskolin_interval()
-    reported_time = row["reported_restart_datetime"]
-    if pd.isna(reported_time):
-        return empty_forskolin_interval()
-    file_nodes = (
-        raw_all.loc[
-            raw_all["recording_uid"] == row["recording_uid"],
-            "measurement_datetime",
-        ]
-        .dropna()
-        .dt.round(f"{RECORDING_NODE_ROUND_MIN}min")
-        .drop_duplicates()
-        .sort_values()
-    )
-    restart_on_node = bool((file_nodes == reported_time).any())
-    previous_nodes = file_nodes[file_nodes < reported_time]
-    following_nodes = file_nodes[
-        file_nodes == reported_time if restart_on_node else file_nodes > reported_time
-    ]
-    if len(previous_nodes) == 0 or len(following_nodes) == 0:
-        return empty_forskolin_interval(restart_on_node)
-    interval_start = previous_nodes.iloc[-1]
-    interval_end = following_nodes.iloc[0]
-    interval_width_min = (interval_end - interval_start).total_seconds() / 60
-    lower = EXPECTED_SAMPLING_INTERVAL_MIN - SAMPLING_TOLERANCE_MIN
-    upper = EXPECTED_SAMPLING_INTERVAL_MIN + SAMPLING_TOLERANCE_MIN
-    if not lower <= interval_width_min <= upper:
-        return empty_forskolin_interval(restart_on_node)
-    estimated_time = interval_start + (interval_end - interval_start) / 2
-    return pd.Series(
-        {
-            "restart_on_file_20min_node": restart_on_node,
-            "forskolin_window_start_datetime": interval_start,
-            "forskolin_window_end_datetime": interval_end,
-            "forskolin_estimated_datetime": estimated_time,
-        }
-    )
-
-
-def add_elapsed_forskolin_times(overview, raw_all):
-    clock_start = (
-        raw_all.assign(
-            estimated_clock_start=lambda frame: frame["measurement_datetime"]
-            - pd.to_timedelta(frame["time_days"], unit="D")
-        )
-        .groupby("recording_uid", dropna=False)["estimated_clock_start"]
-        .median()
-        .rename("estimated_clock_start")
-        .reset_index()
-    )
-    overview = overview.merge(
-        clock_start,
-        on="recording_uid",
-        how="left",
-        validate="one_to_one",
-    )
-    for source, target in [
-        ("forskolin_estimated_datetime", "forskolin_time_days"),
-        ("forskolin_window_start_datetime", "forskolin_window_start_days"),
-        ("forskolin_window_end_datetime", "forskolin_window_end_days"),
-    ]:
-        overview[target] = (
-            overview[source] - overview["estimated_clock_start"]
-        ).dt.total_seconds() / 86400
+    overview["recording_duration_days"] = overview["max_time_days"] - overview["min_time_days"]
+    overview = overview.merge(raw_counts, on="recording_uid", validate="one_to_one")
+    overview = overview.merge(analysis_counts, on="recording_uid", validate="one_to_one")
     return overview
 
 
-def validate_forskolin_assignments(overview, schedule, normalized_short_ids):
-    invalid_recordings = overview[
-        ~overview["forskolin_status"].isin(
-            ["administered_estimated", "not_administered"]
-        )
-        | (
-            overview["forskolin_status"].eq("administered_estimated")
-            & overview["forskolin_estimated_datetime"].isna()
-        )
-    ]
-    found_short_ids = set(
-        overview.loc[overview["confirmed_no_forskolin"], "recording_key"]
-    )
-    missing_short_ids = normalized_short_ids - found_short_ids
-    match_counts = (
-        overview["matched_schedule_id"].dropna().astype(int).value_counts()
-    )
-    schedule_match_counts = schedule["schedule_id"].map(match_counts).fillna(0).astype(int)
-    invalid_schedule = schedule[schedule_match_counts.ne(1)]
-    if len(invalid_recordings) or missing_short_ids or len(invalid_schedule):
-        recording_details = invalid_recordings[
-            ["path", "forskolin_status", "n_schedule_candidates"]
-        ].to_dict("records")
-        schedule_details = invalid_schedule[
-            ["schedule_recording_id", "reported_restart_datetime"]
-        ].to_dict("records")
-        raise RuntimeError(
-            "Forskolin assignment validation failed: "
-            f"recordings={recording_details}; "
-            f"missing_no_forskolin_ids={sorted(missing_short_ids)}; "
-            f"schedule_entries={schedule_details}"
-        )
-
-
-def median_sampling_interval_min(values):
-    values = pd.to_numeric(values, errors="coerce").dropna().sort_values()
-    if len(values) < 2:
-        return np.nan
-    return float(np.median(np.diff(values)) * 24 * 60)
-
-
-def count_time_gaps(values, gap_factor=1.5):
-    values = pd.to_numeric(values, errors="coerce").dropna().sort_values()
-    if len(values) < 3:
-        return 0
-    differences = np.diff(values)
-    median_difference = np.median(differences)
-    if not np.isfinite(median_difference) or median_difference <= 0:
-        return 0
-    return int(np.sum(differences > gap_factor * median_difference))
-
-
-def count_duplicate_times(values):
-    values = pd.to_numeric(values, errors="coerce").dropna()
-    return int(values.duplicated().sum())
-
-
-def build_qc_table(raw_all, overview):
-    summary = (
-        raw_all.groupby(
-            [
-                "recording_uid",
-                "path",
-                "batch",
-                "file",
-                "recording_id",
-                "position",
-                "sample_code",
-                "tissue",
-                "scn_region",
-                "spinal_region",
-                "level",
-            ],
-            dropna=False,
-        )
-        .agg(
-            min_time_days=("time_days", "min"),
-            max_time_days=("time_days", "max"),
-            n_points=("time_days", "size"),
-            median_sampling_interval_min=("time_days", median_sampling_interval_min),
-            n_time_gaps=("time_days", count_time_gaps),
-            n_duplicate_times=("time_days", count_duplicate_times),
-            n_missing_time=("time_days", lambda values: int(values.isna().sum())),
-            n_missing_counts=("counts_sec", lambda values: int(values.isna().sum())),
-            min_counts=("counts_sec", "min"),
-            max_counts=("counts_sec", "max"),
-            mean_counts=("counts_sec", "mean"),
-            median_counts=("counts_sec", "median"),
-        )
-        .reset_index()
-    )
-    summary["recording_duration_days"] = (
-        summary["max_time_days"] - summary["min_time_days"]
-    )
-    assignment_columns = [
-        "recording_uid",
-        "forskolin_status",
-        "reported_restart_datetime",
-        "restart_on_file_20min_node",
-        "forskolin_window_start_datetime",
-        "forskolin_window_end_datetime",
-        "forskolin_estimated_datetime",
-        "forskolin_time_days",
-        "forskolin_window_start_days",
-        "forskolin_window_end_days",
-    ]
-    summary = summary.merge(
-        overview[assignment_columns],
-        on="recording_uid",
-        how="left",
-        validate="one_to_one",
-    )
-    return summary
-
-
-def safe_filename(value):
-    return re.sub(r'[\\/:*?"<>|]', "_", str(value))
-
-
-def make_raw_trace_plots(raw_all):
-    for _, data in raw_all.groupby("recording_uid", sort=False):
-        data = data.sort_values("time_days").copy()
-        median_interval = median_sampling_interval_min(data["time_days"])
-        window_points = (
-            max(1, int(round(120 / median_interval)))
-            if np.isfinite(median_interval) and median_interval > 0
-            else 6
-        )
-        data["smooth_2h_visual"] = (
-            data["counts_sec"]
-            .rolling(window=window_points, center=True, min_periods=1)
-            .mean()
-        )
-        batch = data["batch"].iloc[0]
-        recording_id = data["recording_id"].iloc[0]
-        title = (
-            f"{recording_id} | {data['tissue'].iloc[0]} | "
-            f"sample={data['sample_code'].iloc[0]} | "
-            f"level={data['level'].iloc[0]} | "
-            f"SCN={data['scn_region'].iloc[0]} | batch={batch}"
-        )
-        figure, axis = plt.subplots(figsize=(12, 4))
-        axis.plot(
-            data["time_days"],
-            data["counts_sec"],
-            alpha=0.35,
-            linewidth=0.8,
-            label="Raw counts/sec",
-        )
-        axis.plot(
-            data["time_days"],
-            data["smooth_2h_visual"],
-            linewidth=1.5,
-            label="2 h rolling mean, visual only",
-        )
-        if data["forskolin_status"].iloc[0] == "administered_estimated":
-            axis.axvspan(
-                data["forskolin_window_start_days"].iloc[0],
-                data["forskolin_window_end_days"].iloc[0],
-                color="tab:orange",
-                alpha=0.18,
-                label="Forskolin timing interval",
+def assign_forskolin(overview, analysis):
+    rows = []
+    for _, recording in overview.iterrows():
+        start_date = recording["recording_start_datetime"].normalize()
+        restart = EXPERIMENT_SCHEDULE.get(start_date, pd.NaT)
+        scheduled_date = restart.normalize() if pd.notna(restart) else pd.NaT
+        if pd.isna(restart):
+            rows.append(
+                {
+                    "recording_uid": recording["recording_uid"],
+                    "forskolin_status": "not_administered",
+                    "experiment_start_date": pd.NaT,
+                    "scheduled_forskolin_date": pd.NaT,
+                    "reported_restart_datetime": pd.NaT,
+                    "forskolin_interval_start_datetime": pd.NaT,
+                    "forskolin_interval_end_datetime": pd.NaT,
+                    "forskolin_estimated_datetime": pd.NaT,
+                    "forskolin_time_days": np.nan,
+                    "forskolin_assignment_reason": "no_scheduled_treatment_for_recording_start_date",
+                }
             )
-        axis.set_xlabel("Time (days)")
-        axis.set_ylabel("Counts/sec")
-        axis.set_title(title)
-        axis.legend(fontsize=8)
-        figure.tight_layout()
-        figure.savefig(
-            RAW_PLOT_FOLDER
-            / f"{safe_filename(batch)}_{safe_filename(recording_id)}_raw_trace_qc.png",
-            dpi=300,
+            continue
+        if recording["recording_end_datetime"] < restart:
+            rows.append(
+                {
+                    "recording_uid": recording["recording_uid"],
+                    "forskolin_status": "not_administered",
+                    "experiment_start_date": start_date,
+                    "scheduled_forskolin_date": scheduled_date,
+                    "reported_restart_datetime": restart,
+                    "forskolin_interval_start_datetime": pd.NaT,
+                    "forskolin_interval_end_datetime": pd.NaT,
+                    "forskolin_estimated_datetime": pd.NaT,
+                    "forskolin_time_days": np.nan,
+                    "forskolin_assignment_reason": "recording_ended_before_scheduled_restart",
+                }
+            )
+            continue
+        group = analysis.loc[
+            analysis["recording_uid"].eq(recording["recording_uid"])
+        ].sort_values("measurement_datetime")
+        previous = group.loc[group["measurement_datetime"] < restart]
+        following = group.loc[group["measurement_datetime"] >= restart]
+        if previous.empty or following.empty:
+            raise RuntimeError(f"No observations bracket restart for {recording['recording_uid']}")
+        interval_start = previous.iloc[-1]
+        interval_end = following.iloc[0]
+        width_min = (
+            interval_end["measurement_datetime"] - interval_start["measurement_datetime"]
+        ).total_seconds() / 60.0
+        if abs(width_min - EXPECTED_INTERVAL_MIN) > INTERVAL_TOLERANCE_MIN:
+            raise RuntimeError(
+                f"Treatment bracket for {recording['recording_uid']} is {width_min:g} min"
+            )
+        estimated_datetime = interval_start["measurement_datetime"] + (
+            interval_end["measurement_datetime"] - interval_start["measurement_datetime"]
+        ) / 2
+        estimated_day = (
+            float(interval_start["time_days"]) + float(interval_end["time_days"])
+        ) / 2.0
+        rows.append(
+            {
+                "recording_uid": recording["recording_uid"],
+                "forskolin_status": "administered_estimated",
+                "experiment_start_date": start_date,
+                "scheduled_forskolin_date": scheduled_date,
+                "reported_restart_datetime": restart,
+                "forskolin_interval_start_datetime": interval_start["measurement_datetime"],
+                "forskolin_interval_end_datetime": interval_end["measurement_datetime"],
+                "forskolin_estimated_datetime": estimated_datetime,
+                "forskolin_time_days": estimated_day,
+                "forskolin_assignment_reason": "midpoint_of_actual_observations_bracketing_restart",
+            }
         )
-        plt.close(figure)
+    assignments = pd.DataFrame(rows)
+    overview = overview.merge(assignments, on="recording_uid", validate="one_to_one")
+    counts = overview["forskolin_status"].value_counts().to_dict()
+    if counts.get("administered_estimated", 0) != 55 or counts.get("not_administered", 0) != 6:
+        raise RuntimeError(f"Unexpected forskolin status counts: {counts}")
+    treated = overview["forskolin_status"].eq("administered_estimated")
+    bracket_widths = (
+        overview.loc[treated, "forskolin_interval_end_datetime"]
+        - overview.loc[treated, "forskolin_interval_start_datetime"]
+    ).dt.total_seconds() / 60.0
+    if len(bracket_widths) != 55 or not np.allclose(bracket_widths, EXPECTED_INTERVAL_MIN):
+        raise RuntimeError("Forskolin brackets are not all exactly 20 min")
+    return overview, assignments
 
 
-def diagnostic_fourier_spectrum(data):
-    data = (
-        data[["time_days", "counts_sec"]]
-        .dropna()
-        .sort_values("time_days")
-        .copy()
-    )
-    if len(data) < 10:
-        return None
-    time_days = data["time_days"].to_numpy(dtype=float)
-    signal = data["counts_sec"].to_numpy(dtype=float)
-    signal = signal - np.mean(signal)
-    interval_hours = np.median(np.diff(time_days)) * 24
-    if not np.isfinite(interval_hours) or interval_hours <= 0:
-        return None
-    frequencies = np.fft.rfftfreq(len(signal), d=interval_hours)
-    power = np.abs(np.fft.rfft(signal)) ** 2
+def add_assignments(table, assignments):
+    return table.merge(assignments, on="recording_uid", how="left", validate="many_to_one")
+
+
+def build_gap_report(analysis):
+    rows = []
+    for _, recording in analysis.groupby("recording_uid", sort=True, dropna=False):
+        recording = recording.sort_values("measurement_datetime").reset_index(drop=True)
+        intervals = recording["measurement_datetime"].diff().dt.total_seconds().div(60.0)
+        for index in np.flatnonzero(intervals.gt(GAP_THRESHOLD_MIN).to_numpy()):
+            previous = recording.iloc[index - 1]
+            following = recording.iloc[index]
+            treatment_day = following["forskolin_time_days"]
+            if pd.notna(treatment_day):
+                previous_relative = (float(previous["time_days"]) - float(treatment_day)) * 24.0
+                following_relative = (float(following["time_days"]) - float(treatment_day)) * 24.0
+            else:
+                previous_relative = np.nan
+                following_relative = np.nan
+            rows.append(
+                {
+                    "recording_uid": following["recording_uid"],
+                    "recording_id": following["recording_id"],
+                    "file": following["file"],
+                    "path": following["path"],
+                    "batch": following["batch"],
+                    "forskolin_status": following["forskolin_status"],
+                    "previous_observation_datetime": previous["measurement_datetime"],
+                    "next_observation_datetime": following["measurement_datetime"],
+                    "interval_minutes": float(intervals.iloc[index]),
+                    "previous_time_days": float(previous["time_days"]),
+                    "next_time_days": float(following["time_days"]),
+                    "previous_hours_from_forskolin": previous_relative,
+                    "next_hours_from_forskolin": following_relative,
+                }
+            )
+    return pd.DataFrame(rows)
+
+
+def add_sampling_summary(overview, analysis, gaps, exclusions):
+    sampling_rows = []
+    for recording_uid, recording in analysis.groupby("recording_uid", sort=False, dropna=False):
+        times = recording.sort_values("measurement_datetime")["measurement_datetime"]
+        intervals = times.diff().dt.total_seconds().div(60.0).dropna()
+        sampling_rows.append(
+            {
+                "recording_uid": recording_uid,
+                "median_sampling_interval_min": float(intervals.median()),
+                "maximum_sampling_interval_min": float(intervals.max()),
+            }
+        )
+    sampling = pd.DataFrame(sampling_rows)
+    gap_counts = gaps.groupby("recording_uid").size().rename("n_sampling_gaps")
+    exclusion_counts = exclusions.groupby("recording_uid").size().rename("n_excluded_observations")
+    overview = overview.merge(sampling, on="recording_uid", validate="one_to_one")
+    overview = overview.merge(gap_counts, on="recording_uid", how="left")
+    overview = overview.merge(exclusion_counts, on="recording_uid", how="left")
+    overview["n_sampling_gaps"] = overview["n_sampling_gaps"].fillna(0).astype(int)
+    overview["n_excluded_observations"] = overview["n_excluded_observations"].fillna(0).astype(int)
+    return overview
+
+
+def make_raw_plot(recording):
+    recording = recording.sort_values("time_days")
+    time = recording["time_days"].to_numpy(dtype=float)
+    signal = recording["counts_sec"].to_numpy(dtype=float)
+    centered = signal - np.median(signal)
+    points = max(1, int(round(SMOOTHING_HOURS * 60.0 / EXPECTED_INTERVAL_MIN)))
+    smoothed = pd.Series(centered).rolling(points, center=True, min_periods=1).mean()
+    figure, axis = plt.subplots(figsize=(11, 4.5))
+    axis.plot(time, centered, color="0.70", linewidth=0.7, alpha=0.7, label="Raw centred")
+    axis.plot(time, smoothed, color="#1f77b4", linewidth=1.4, label="2-h rolling mean")
+    treatment_day = recording["forskolin_time_days"].dropna()
+    if len(treatment_day):
+        axis.axvline(float(treatment_day.iloc[0]), color="#d62728", linestyle="--", linewidth=1.2, label="Estimated forskolin time")
+    axis.axhline(0.0, color="0.25", linewidth=0.7)
+    axis.set_xlabel("Elapsed time (days)")
+    axis.set_ylabel("Centred counts/sec")
+    axis.set_title(str(recording["recording_uid"].iloc[0]))
+    axis.legend(frameon=False, fontsize=8)
+    figure.tight_layout()
+    figure.savefig(RAW_PLOT_FOLDER / f"{safe_filename(recording['recording_uid'].iloc[0])}.png", dpi=180)
+    plt.close(figure)
+
+
+def make_fourier_plot(recording):
+    recording = recording.sort_values("time_days")
+    time_hours = recording["time_days"].to_numpy(dtype=float) * 24.0
+    signal = recording["counts_sec"].to_numpy(dtype=float)
+    interval_hours = EXPECTED_INTERVAL_MIN / 60.0
+    uniform_time = np.arange(time_hours[0], time_hours[-1] + interval_hours * 0.5, interval_hours)
+    uniform_signal = np.interp(uniform_time, time_hours, signal)
+    frequencies = np.fft.rfftfreq(len(uniform_signal), d=interval_hours)
+    power = np.abs(np.fft.rfft(uniform_signal - np.mean(uniform_signal))) ** 2
     valid = frequencies > 0
-    if not np.any(valid):
-        return None
-    return 1 / frequencies[valid], power[valid]
-
-
-def make_fourier_plots(raw_all):
-    for _, data in raw_all.groupby("recording_uid", sort=False):
-        result = diagnostic_fourier_spectrum(data)
-        if result is None:
-            continue
-        period_hours, power = result
-        plot_mask = (period_hours >= 4) & (period_hours <= 80)
-        if not np.any(plot_mask):
-            continue
-        batch = data["batch"].iloc[0]
-        recording_id = data["recording_id"].iloc[0]
-        figure, axis = plt.subplots(figsize=(8, 4))
-        axis.plot(period_hours[plot_mask], power[plot_mask])
-        axis.axvline(24, linestyle="--", linewidth=1, label="24 h")
-        axis.axvspan(20, 30, alpha=0.15, label="20–30 h circadian range")
-        axis.set_xlabel("Period (hours)")
-        axis.set_ylabel("Fourier power")
-        axis.set_title(f"Diagnostic Fourier spectrum: {recording_id}")
-        axis.legend(fontsize=8)
-        figure.tight_layout()
-        figure.savefig(
-            FOURIER_PLOT_FOLDER
-            / f"{safe_filename(batch)}_{safe_filename(recording_id)}_fourier_qc.png",
-            dpi=300,
-        )
-        plt.close(figure)
+    periods = 1.0 / frequencies[valid]
+    power = power[valid]
+    selected = (periods >= FOURIER_MIN_PERIOD_HOURS) & (periods <= FOURIER_MAX_PERIOD_HOURS)
+    figure, axis = plt.subplots(figsize=(8, 4.5))
+    axis.plot(periods[selected], power[selected], color="#1f77b4", linewidth=1.3)
+    axis.set_xlim(FOURIER_MIN_PERIOD_HOURS, FOURIER_MAX_PERIOD_HOURS)
+    axis.set_xlabel("Period (h)")
+    axis.set_ylabel("Fourier power")
+    axis.set_title(str(recording["recording_uid"].iloc[0]))
+    figure.tight_layout()
+    figure.savefig(FOURIER_PLOT_FOLDER / f"{safe_filename(recording['recording_uid'].iloc[0])}.png", dpi=180)
+    plt.close(figure)
 
 
 def main():
-    files = sorted(
-        [path for path in DATA_FOLDER.rglob("*") if path.suffix.lower() == ".csv"],
-        key=lambda path: path.as_posix().lower(),
-    )
-    if not files:
-        raise FileNotFoundError(f"No CSV files found in {DATA_FOLDER}")
-    metadata_rows = [parse_filename(path) for path in files]
-    if len({row["recording_uid"] for row in metadata_rows}) != len(metadata_rows):
-        raise RuntimeError("Duplicate recording_uid values were found")
-    raw_all = pd.concat(
-        [
-            read_recording(path, metadata)
-            for path, metadata in zip(files, metadata_rows)
-        ],
-        ignore_index=True,
-    )
-    schedule = build_forskolin_schedule()
-    overview, normalized_short_ids = build_recording_overview(raw_all)
-    assignments = overview.apply(assign_forskolin, axis=1, schedule=schedule)
-    overview = pd.concat([overview, assignments], axis=1)
-    intervals = overview.apply(derive_forskolin_interval, axis=1, raw_all=raw_all)
-    overview = pd.concat([overview, intervals], axis=1)
-    overview = add_elapsed_forskolin_times(overview, raw_all)
-    validate_forskolin_assignments(overview, schedule, normalized_short_ids)
-    assignment_columns = [
-        "recording_uid",
-        "forskolin_status",
-        "reported_restart_datetime",
-        "restart_on_file_20min_node",
-        "forskolin_window_start_datetime",
-        "forskolin_window_end_datetime",
-        "forskolin_estimated_datetime",
-        "forskolin_time_days",
-        "forskolin_window_start_days",
-        "forskolin_window_end_days",
-    ]
-    raw_all = raw_all.merge(
-        overview[assignment_columns],
-        on="recording_uid",
-        how="left",
-        validate="many_to_one",
-    )
-    qc_table = build_qc_table(raw_all, overview)
-    assignment_output_columns = [
-        "recording_uid",
-        "path",
-        "batch",
-        "file",
-        "recording_id",
-        "recording_start_datetime",
-        "recording_end_datetime",
-        "min_time_days",
-        "max_time_days",
-        "recording_duration_days",
-        "forskolin_status",
-        "reported_restart_datetime",
-        "restart_on_file_20min_node",
-        "forskolin_window_start_datetime",
-        "forskolin_window_end_datetime",
-        "forskolin_estimated_datetime",
-        "forskolin_time_days",
-        "forskolin_window_start_days",
-        "forskolin_window_end_days",
-    ]
     for folder in [TABLE_FOLDER, RAW_PLOT_FOLDER, FOURIER_PLOT_FOLDER]:
         folder.mkdir(parents=True, exist_ok=True)
-    raw_all.drop(columns="recording_key").to_csv(
-        TABLE_FOLDER / "all_lumicycle_raw_long_format.csv",
-        index=False,
-    )
-    qc_table.to_csv(TABLE_FOLDER / "file_summary_qc.csv", index=False)
-    overview[assignment_output_columns].to_csv(
-        TABLE_FOLDER / "forskolin_assignment_check.csv",
-        index=False,
-    )
-    if MAKE_RAW_PLOTS:
-        make_raw_trace_plots(raw_all)
-    if MAKE_FOURIER_PLOTS:
-        make_fourier_plots(raw_all)
+    raw = build_raw_table()
+    if len(raw) != 54079 or raw["recording_uid"].nunique() != 61:
+        raise RuntimeError(
+            f"Unexpected raw data dimensions: rows={len(raw)}, recordings={raw['recording_uid'].nunique()}"
+        )
+    analysis, exclusions = exclude_conflicting_observations(raw)
+    if len(analysis) != 54077 or len(exclusions) != 2:
+        raise RuntimeError(
+            f"Unexpected analysis dimensions: rows={len(analysis)}, exclusions={len(exclusions)}"
+        )
+    overview = build_recording_overview(raw, analysis)
+    overview, assignments = assign_forskolin(overview, analysis)
+    raw = add_assignments(raw, assignments)
+    analysis = add_assignments(analysis, assignments)
+    gaps = build_gap_report(analysis)
+    if len(gaps) != 58:
+        raise RuntimeError(f"Unexpected number of sampling gaps: {len(gaps)}")
+    overview = add_sampling_summary(overview, analysis, gaps, exclusions)
+    raw.to_csv(RAW_OUTPUT_PATH, index=False, date_format="%Y-%m-%d %H:%M:%S")
+    analysis.to_csv(ANALYSIS_OUTPUT_PATH, index=False, date_format="%Y-%m-%d %H:%M:%S")
+    overview.to_csv(SUMMARY_OUTPUT_PATH, index=False, date_format="%Y-%m-%d %H:%M:%S")
+    gaps.to_csv(GAP_OUTPUT_PATH, index=False, date_format="%Y-%m-%d %H:%M:%S")
+    exclusions.to_csv(EXCLUSION_OUTPUT_PATH, index=False, date_format="%Y-%m-%d %H:%M:%S")
+    for _, recording in analysis.groupby("recording_uid", sort=True, dropna=False):
+        if MAKE_RAW_PLOTS:
+            make_raw_plot(recording)
+        if MAKE_FOURIER_PLOTS:
+            make_fourier_plot(recording)
 
 
 if __name__ == "__main__":
