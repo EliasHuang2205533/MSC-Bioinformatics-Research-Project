@@ -1,0 +1,343 @@
+method,metric,analysis_role,circular,animal_id,sex,level,spinal_position,spinal_region,value,n_recordings_collapsed,recording_ids
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,L1,13.0,lumbar,24.39635239132719,1,1B-L1m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,L2,14.0,lumbar,24.617985030045254,1,1D-L2m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,L3,15.0,lumbar,26.13079382928621,1,2C-L3m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,L4,16.0,lumbar,25.394806198826224,1,2D-L4m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,L5,17.0,lumbar,23.98432723055831,1,3A-L5m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,T10,10.0,thoracic,25.21720490564704,1,3B-T10m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m2,F,T12,12.0,thoracic,24.182099307727373,2,4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m1,F,T5,5.0,thoracic,26.888920125100945,1,4C-T5m1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m1,F,T7,7.0,thoracic,25.25705450328558,1,4D-T7m1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m1,F,T10,10.0,thoracic,23.276381909547663,1,5A-T10m1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,T12,12.0,thoracic,26.623256140844,1,5C-T12
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,T10,10.0,thoracic,24.841585550128183,1,5D-T10
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,T7,7.0,thoracic,24.03204835365632,1,6A-T7
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,T5,5.0,thoracic,24.04410162701612,1,6B-T5
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,L1,13.0,lumbar,24.219981024001047,1,7C-L1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,L2,14.0,lumbar,24.737533822960884,1,7D-L2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250626_M1,M,L3,15.0,lumbar,23.55237727097016,1,8A-L3
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m1,F,L2,14.0,lumbar,25.270829672839643,1,8B-L2m1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m1,F,L3,15.0,lumbar,23.78606318304804,1,8C-L3m1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250703_m1,F,L4,16.0,lumbar,24.817724988579183,1,8D-L4-1m1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,L1,13.0,lumbar,24.923252626770136,1,2C-2ML1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,L2,14.0,lumbar,25.25410268123828,1,2D-1FL2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,L4,16.0,lumbar,26.662121797800104,2,3A-1FL4 | 4D-1FL4
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,T10,10.0,thoracic,26.400885546614106,1,3D-1FT10
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,T10,10.0,thoracic,26.53568542010745,1,4A-2MT10
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,T5,5.0,thoracic,26.76494359911437,1,4C-2MT5
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,L2,14.0,lumbar,23.70538004708852,1,5A-2ML2
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,T7,7.0,thoracic,27.6982113364022,1,5C-1FT7
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,L1,13.0,lumbar,25.12815827388684,1,6A-1FL1
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,L3,15.0,lumbar,24.76287029553353,1,6B-2ML3
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,T12,12.0,thoracic,24.17275187124426,1,7C-1FT12
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,T12,12.0,thoracic,24.68341708542706,1,7D-2MT12
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_1F,F,T5,5.0,thoracic,26.049126752644263,1,8A-1FT5
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,L4,16.0,lumbar,24.17914748568008,1,8C-2ML4
+CWT_pyBOAT,baseline_period_hours,primary,False,20250811_2M,M,T7,7.0,thoracic,25.80904522613057,1,8D-2MT7
+CWT_pyBOAT,baseline_period_hours,primary,False,20251003_M1,M,T7,7.0,thoracic,24.072881891977293,1,2B- 1MT7
+CWT_pyBOAT,baseline_period_hours,primary,False,20251003_M1,M,L1,13.0,lumbar,24.718592964824047,1,2C- M1L1
+CWT_pyBOAT,baseline_period_hours,primary,False,20251003_M1,M,L4,16.0,lumbar,23.40281828724032,1,2D- M1L4
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,L1,13.0,lumbar,0.0282882946199549,1,1B-L1m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,L2,14.0,lumbar,0.3758653406894545,1,1D-L2m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,L3,15.0,lumbar,-1.588080261447093,1,2C-L3m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,L4,16.0,lumbar,-0.7817408721931329,1,2D-L4m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,L5,17.0,lumbar,-0.0312401166672522,1,3A-L5m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,T10,10.0,thoracic,-1.378008925747615,1,3B-T10m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,T12,12.0,thoracic,-0.11598200794180788,2,4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,T5,5.0,thoracic,-1.5723372105281612,1,4C-T5m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,T7,7.0,thoracic,-0.9605720912253553,1,4D-T7m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,T10,10.0,thoracic,1.2909301753522795,1,5A-T10m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,T12,12.0,thoracic,-1.312822855536421,1,5C-T12
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,T10,10.0,thoracic,0.3342938468566636,1,5D-T10
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,T7,7.0,thoracic,1.2141828021224974,1,6A-T7
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,T5,5.0,thoracic,0.9856625786274016,1,6B-T5
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,L1,13.0,lumbar,0.2462311557788972,1,7C-L1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,L2,14.0,lumbar,0.5438732122149119,1,7D-L2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,L3,15.0,lumbar,0.1992479881927131,1,8A-L3
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,L2,14.0,lumbar,0.2715676283515513,1,8B-L2m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,L3,15.0,lumbar,-0.0049197034121633,1,8C-L3m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,L4,16.0,lumbar,0.7168007871525433,1,8D-L4-1m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,L1,13.0,lumbar,1.688688196225879,1,2C-2ML1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,L2,14.0,lumbar,-0.0078715254594641,1,2D-1FL2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,L4,16.0,lumbar,-0.8530765716695348,2,3A-1FL4 | 4D-1FL4
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,T10,10.0,thoracic,0.1407035175879443,1,3D-1FT10
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,T10,10.0,thoracic,-2.303405137575986,1,4A-2MT10
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,T5,5.0,thoracic,-0.4806550233685875,1,4C-2MT5
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,L2,14.0,lumbar,1.674667041501209,1,5A-2ML2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,T7,7.0,thoracic,-1.813402677724273,1,5C-1FT7
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,L1,13.0,lumbar,-0.9421232034297377,1,6A-1FL1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,L3,15.0,lumbar,1.3979337245668866,1,6B-2ML3
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,T12,12.0,thoracic,0.4575324173314108,1,7C-1FT12
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,T12,12.0,thoracic,1.0552763819095432,1,7D-2MT12
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,T5,5.0,thoracic,-0.3807850441016285,1,8A-1FT5
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,L4,16.0,lumbar,0.7866605756052962,1,8C-2ML4
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,T7,7.0,thoracic,0.4152229679867858,1,8D-2MT7
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M1,M,T7,7.0,thoracic,0.3222405734968596,1,2B- 1MT7
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M1,M,L1,13.0,lumbar,2.1226060371788904,1,2C- M1L1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M1,M,L4,16.0,lumbar,0.2956741750711629,1,2D- M1L4
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,L1,13.0,lumbar,0.9216090142082088,1,1B-L1m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,L2,14.0,lumbar,0.611082210613206,1,1D-L2m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,L3,15.0,lumbar,1.413229472605407,1,2C-L3m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,L4,16.0,lumbar,1.1472626819870022,1,2D-L4m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,L5,17.0,lumbar,0.0197991832878549,1,3A-L5m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,T10,10.0,thoracic,1.0683110479704525,1,3B-T10m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,T12,12.0,thoracic,0.9170909841080412,2,4B-T12m2 | 5B-T12m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,T5,5.0,thoracic,1.435338429106778,1,4C-T5m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,T7,7.0,thoracic,0.1126797965550947,1,4D-T7m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,T10,10.0,thoracic,-0.3976098645727357,1,5A-T10m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,T12,12.0,thoracic,1.424976923414103,1,5C-T12
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,T10,10.0,thoracic,0.7373142225107835,1,5D-T10
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,T7,7.0,thoracic,0.2299748268963624,1,6A-T7
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,T5,5.0,thoracic,1.0744463573137115,1,6B-T5
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,L1,13.0,lumbar,0.9676966436419292,1,7C-L1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,L2,14.0,lumbar,1.266675936564409,1,7D-L2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,L3,15.0,lumbar,0.3977645937405066,1,8A-L3
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,L2,14.0,lumbar,1.2881325116513132,1,8B-L2m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,L3,15.0,lumbar,-0.788183820241863,1,8C-L3m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,L4,16.0,lumbar,0.277405752107091,1,8D-L4-1m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,L1,13.0,lumbar,2.5022862933095995,1,2C-2ML1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,L2,14.0,lumbar,1.3467285029141265,1,2D-1FL2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,L4,16.0,lumbar,0.7442330011769017,2,3A-1FL4 | 4D-1FL4
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,T10,10.0,thoracic,1.9155823010444049,1,3D-1FT10
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,T10,10.0,thoracic,0.9741097767928864,1,4A-2MT10
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,T5,5.0,thoracic,1.5748825990635782,1,4C-2MT5
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,L2,14.0,lumbar,1.8620931314103693,1,5A-2ML2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,T7,7.0,thoracic,1.6152486837541824,1,5C-1FT7
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,L1,13.0,lumbar,1.807059457565125,1,6A-1FL1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,L3,15.0,lumbar,1.5771372027426906,1,6B-2ML3
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,T12,12.0,thoracic,2.127145816096136,1,7C-1FT12
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,T12,12.0,thoracic,0.8845498974058955,1,7D-2MT12
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,T5,5.0,thoracic,1.4688493485601817,1,8A-1FT5
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,L4,16.0,lumbar,1.2300424839416813,1,8C-2ML4
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,T7,7.0,thoracic,0.9082192083699407,1,8D-2MT7
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M1,M,T7,7.0,thoracic,0.7190306637029394,1,2B- 1MT7
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M1,M,L1,13.0,lumbar,0.0925948537703642,1,2C- M1L1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M1,M,L4,16.0,lumbar,-0.2897317302957563,1,2D- M1L4
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,L1,13.0,lumbar,1.9946501176137583,1,1B-L1m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,L2,14.0,lumbar,0.7330501730257644,1,1D-L2m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,L3,15.0,lumbar,3.2282209762631764,1,2C-L3m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,L4,16.0,lumbar,2.584618338760281,1,2D-L4m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,L5,17.0,lumbar,1.895385578287096,1,3A-L5m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,T10,10.0,thoracic,6.69954590763852,1,3B-T10m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,T12,12.0,thoracic,2.7792806448467617,2,4B-T12m2 | 5B-T12m2
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,T5,5.0,thoracic,1.1984778579721098,1,4C-T5m1
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,T7,7.0,thoracic,2.144154736744278,1,4D-T7m1
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,T10,10.0,thoracic,0.7083395535011592,1,5A-T10m1
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,T12,12.0,thoracic,2.627048633130499,1,5C-T12
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,T10,10.0,thoracic,2.8972795047568143,1,5D-T10
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,T7,7.0,thoracic,1.08335850838072,1,6A-T7
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,T5,5.0,thoracic,1.1815937941443433,1,6B-T5
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,L1,13.0,lumbar,0.9724942766534932,1,7C-L1
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,L2,14.0,lumbar,2.5475562118463237,1,7D-L2
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,L3,15.0,lumbar,3.1554196236155554,1,8A-L3
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,L2,14.0,lumbar,1.5898904336689397,1,8B-L2m1
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,L3,15.0,lumbar,31.62961489736012,1,8C-L3m1
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,L4,16.0,lumbar,4.556642138476713,1,8D-L4-1m1
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,L1,13.0,lumbar,2.0947066641242253,1,2C-2ML1
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,L2,14.0,lumbar,4.183272068828126,1,2D-1FL2
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,L4,16.0,lumbar,1.68823934789381,2,3A-1FL4 | 4D-1FL4
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,T10,10.0,thoracic,2.97604978734035,1,3D-1FT10
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,T10,10.0,thoracic,0.9361639734976676,1,4A-2MT10
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,T5,5.0,thoracic,1.438877605255564,1,4C-2MT5
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,L2,14.0,lumbar,0.8301076204673035,1,5A-2ML2
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,T7,7.0,thoracic,0.9899283551962096,1,5C-1FT7
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,L1,13.0,lumbar,2.4311596003557963,1,6A-1FL1
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,L3,15.0,lumbar,3.889395119262902,1,6B-2ML3
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,T12,12.0,thoracic,3.1715269465170186,1,7C-1FT12
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,T12,12.0,thoracic,5.227994923100154,1,7D-2MT12
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,T5,5.0,thoracic,0.7624184559511766,1,8A-1FT5
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,L4,16.0,lumbar,11.05958992297646,1,8C-2ML4
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,T7,7.0,thoracic,3.066598736405955,1,8D-2MT7
+STFT,pre_amplitude_counts,descriptive,False,20251003_M1,M,T7,7.0,thoracic,0.7288095454768696,1,2B- 1MT7
+STFT,pre_amplitude_counts,descriptive,False,20251003_M1,M,L1,13.0,lumbar,6.0820975284585455,1,2C- M1L1
+STFT,pre_amplitude_counts,descriptive,False,20251003_M1,M,L4,16.0,lumbar,30.23096525418257,1,2D- M1L4
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,L1,13.0,lumbar,5.013216221597288,1,1B-L1m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,L2,14.0,lumbar,1.35058938688121,1,1D-L2m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,L3,15.0,lumbar,13.26542036352488,1,2C-L3m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,L4,16.0,lumbar,8.140409895561257,1,2D-L4m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,L5,17.0,lumbar,1.933286631586119,1,3A-L5m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,T10,10.0,thoracic,19.49875850419211,1,3B-T10m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,T12,12.0,thoracic,11.173025129621477,2,4B-T12m2 | 5B-T12m2
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,T5,5.0,thoracic,5.034885217781494,1,4C-T5m1
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,T7,7.0,thoracic,2.3998955345802044,1,4D-T7m1
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,T10,10.0,thoracic,0.4759504296855705,1,5A-T10m1
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,T12,12.0,thoracic,10.92264270235222,1,5C-T12
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,T10,10.0,thoracic,6.0562234781973725,1,5D-T10
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,T7,7.0,thoracic,1.3634807059320275,1,6A-T7
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,T5,5.0,thoracic,3.4601452136664403,1,6B-T5
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,L1,13.0,lumbar,2.559483690995679,1,7C-L1
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,L2,14.0,lumbar,9.0413679777671,1,7D-L2
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,L3,15.0,lumbar,4.696821877052701,1,8A-L3
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,L2,14.0,lumbar,5.764956544434756,1,8B-L2m1
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,L3,15.0,lumbar,14.381030931604103,1,8C-L3m1
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,L4,16.0,lumbar,6.013408532160894,1,8D-L4-1m1
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,L1,13.0,lumbar,25.57716138133419,1,2C-2ML1
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,L2,14.0,lumbar,16.083955701184934,1,2D-1FL2
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,L4,16.0,lumbar,8.556289557584996,2,3A-1FL4 | 4D-1FL4
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,T10,10.0,thoracic,20.210032660939227,1,3D-1FT10
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,T10,10.0,thoracic,2.4797187445897424,1,4A-2MT10
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,T5,5.0,thoracic,6.950029943153484,1,4C-2MT5
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,L2,14.0,lumbar,5.343565934089102,1,5A-2ML2
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,T7,7.0,thoracic,4.978486737031182,1,5C-1FT7
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,L1,13.0,lumbar,14.811853951943604,1,6A-1FL1
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,L3,15.0,lumbar,18.828860994187345,1,6B-2ML3
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,T12,12.0,thoracic,26.61191305156248,1,7C-1FT12
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,T12,12.0,thoracic,12.661649773259672,1,7D-2MT12
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,T5,5.0,thoracic,3.3121238472788064,1,8A-1FT5
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,L4,16.0,lumbar,37.839003219597714,1,8C-2ML4
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,T7,7.0,thoracic,7.604865595195594,1,8D-2MT7
+STFT,post_amplitude_counts,descriptive,False,20251003_M1,M,T7,7.0,thoracic,1.4958398596091431,1,2B- 1MT7
+STFT,post_amplitude_counts,descriptive,False,20251003_M1,M,L1,13.0,lumbar,6.672165557262643,1,2C- M1L1
+STFT,post_amplitude_counts,descriptive,False,20251003_M1,M,L4,16.0,lumbar,22.626799183026,1,2D- M1L4
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L1,13.0,lumbar,-0.3389535047845838,1,1B-L1m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L2,14.0,lumbar,-0.2701505039125526,1,1D-L2m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L3,15.0,lumbar,-0.1902180597278013,1,2C-L3m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L4,16.0,lumbar,-0.0592671129065947,1,2D-L4m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L5,17.0,lumbar,-0.2090216723347754,1,3A-L5m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,T10,10.0,thoracic,-0.2331532159128062,1,3B-T10m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,T12,12.0,thoracic,0.0015329564586855637,2,4B-T12m2 | 5B-T12m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,T5,5.0,thoracic,-0.4406267970133325,1,4C-T5m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,T7,7.0,thoracic,-0.3456978333802388,1,4D-T7m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,T10,10.0,thoracic,-0.3591016856781634,1,5A-T10m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T12,12.0,thoracic,-0.3894323974691649,1,5C-T12
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T10,10.0,thoracic,-0.4624266274129234,1,5D-T10
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T7,7.0,thoracic,-0.4441985266702318,1,6A-T7
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T5,5.0,thoracic,-0.31660700041543,1,6B-T5
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,L1,13.0,lumbar,-0.3675990654350405,1,7C-L1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,L2,14.0,lumbar,-0.3683403613140903,1,7D-L2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,L3,15.0,lumbar,-0.3993371957057122,1,8A-L3
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,L2,14.0,lumbar,-0.0975658381776865,1,8B-L2m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,L3,15.0,lumbar,-0.4443835404564523,1,8C-L3m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,L4,16.0,lumbar,-0.3150407542025497,1,8D-L4-1m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L1,13.0,lumbar,0.1211130465283017,1,2C-2ML1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,L2,14.0,lumbar,-0.3829221834557553,1,2D-1FL2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,L4,16.0,lumbar,-0.11142142961192181,2,3A-1FL4 | 4D-1FL4
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T10,10.0,thoracic,-0.5062577111876627,1,3D-1FT10
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T10,10.0,thoracic,-0.4538191615544826,1,4A-2MT10
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T5,5.0,thoracic,-0.2677705531138076,1,4C-2MT5
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L2,14.0,lumbar,-0.1219562659865062,1,5A-2ML2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T7,7.0,thoracic,-0.5225452267619614,1,5C-1FT7
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,L1,13.0,lumbar,-0.2049633700463994,1,6A-1FL1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L3,15.0,lumbar,-0.3252225078812745,1,6B-2ML3
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T12,12.0,thoracic,-0.2756894806117445,1,7C-1FT12
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T12,12.0,thoracic,-0.3525017887341232,1,7D-2MT12
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T5,5.0,thoracic,-0.2638969456095449,1,8A-1FT5
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L4,16.0,lumbar,-0.3178093487017302,1,8C-2ML4
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T7,7.0,thoracic,-0.2820162436702182,1,8D-2MT7
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M1,M,T7,7.0,thoracic,-0.179955307671049,1,2B- 1MT7
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M1,M,L1,13.0,lumbar,-0.0047147956411177,1,2C- M1L1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M1,M,L4,16.0,lumbar,-0.5297897525699929,1,2D- M1L4
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L1,13.0,lumbar,-0.3836781427392469,1,1B-L1m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L2,14.0,lumbar,-0.357506785975437,1,1D-L2m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L3,15.0,lumbar,-0.4655894655335009,1,2C-L3m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L4,16.0,lumbar,-0.1425669669576607,1,2D-L4m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,L5,17.0,lumbar,-0.4490718185866761,1,3A-L5m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,T10,10.0,thoracic,-0.4368660959966774,1,3B-T10m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,T12,12.0,thoracic,-0.5216989822727194,2,4B-T12m2 | 5B-T12m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,T5,5.0,thoracic,-0.3259165690333784,1,4C-T5m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,T7,7.0,thoracic,-0.3767571612403301,1,4D-T7m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,T10,10.0,thoracic,-0.5363083741970229,1,5A-T10m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T12,12.0,thoracic,-0.3249423566043292,1,5C-T12
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T10,10.0,thoracic,-0.5425086453940482,1,5D-T10
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T7,7.0,thoracic,-0.3466500116072186,1,6A-T7
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,T5,5.0,thoracic,-0.4841395444565691,1,6B-T5
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,L1,13.0,lumbar,-0.3663231888949088,1,7C-L1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,L2,14.0,lumbar,-0.2994234870549079,1,7D-L2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,L3,15.0,lumbar,-0.1624490270598458,1,8A-L3
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,L2,14.0,lumbar,-0.6077728524234902,1,8B-L2m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,L3,15.0,lumbar,-0.4859946396413969,1,8C-L3m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,L4,16.0,lumbar,-0.2624377405904528,1,8D-L4-1m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L1,13.0,lumbar,-0.4150438579177083,1,2C-2ML1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,L2,14.0,lumbar,-0.3891139713986487,1,2D-1FL2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,L4,16.0,lumbar,-0.4749363704232108,2,3A-1FL4 | 4D-1FL4
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T10,10.0,thoracic,-0.4200488890945467,1,3D-1FT10
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T10,10.0,thoracic,-0.5642885210596293,1,4A-2MT10
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T5,5.0,thoracic,-0.7017379981609898,1,4C-2MT5
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L2,14.0,lumbar,-0.3737878993564695,1,5A-2ML2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T7,7.0,thoracic,-0.5411603387769607,1,5C-1FT7
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,L1,13.0,lumbar,-0.5486655158604065,1,6A-1FL1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L3,15.0,lumbar,-0.1444075951389579,1,6B-2ML3
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T12,12.0,thoracic,0.0314950572840325,1,7C-1FT12
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T12,12.0,thoracic,-0.4667326493840379,1,7D-2MT12
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,T5,5.0,thoracic,-0.6141652399335892,1,8A-1FT5
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,L4,16.0,lumbar,-0.5380152011881627,1,8C-2ML4
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,T7,7.0,thoracic,-0.522362746561031,1,8D-2MT7
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M1,M,T7,7.0,thoracic,-0.4027478828511575,1,2B- 1MT7
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M1,M,L1,13.0,lumbar,-0.105531490236849,1,2C- M1L1
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M1,M,L4,16.0,lumbar,-0.582657888621321,1,2D- M1L4
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,L1,13.0,lumbar,-0.044724637954663,1,1B-L1m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,L2,14.0,lumbar,-0.0873562820628844,1,1D-L2m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,L3,15.0,lumbar,-0.2753714058056995,1,2C-L3m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,L4,16.0,lumbar,-0.0832998540510659,1,2D-L4m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,L5,17.0,lumbar,-0.2400501462519007,1,3A-L5m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,T10,10.0,thoracic,-0.2037128800838712,1,3B-T10m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,T12,12.0,thoracic,-0.5232319387314048,2,4B-T12m2 | 5B-T12m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,T5,5.0,thoracic,0.1147102279799541,1,4C-T5m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,T7,7.0,thoracic,-0.0310593278600913,1,4D-T7m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,T10,10.0,thoracic,-0.1772066885188595,1,5A-T10m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,T12,12.0,thoracic,0.0644900408648357,1,5C-T12
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,T10,10.0,thoracic,-0.0800820179811248,1,5D-T10
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,T7,7.0,thoracic,0.0975485150630132,1,6A-T7
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,T5,5.0,thoracic,-0.1675325440411391,1,6B-T5
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,L1,13.0,lumbar,0.0012758765401316,1,7C-L1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,L2,14.0,lumbar,0.0689168742591824,1,7D-L2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,L3,15.0,lumbar,0.2368881686458663,1,8A-L3
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,L2,14.0,lumbar,-0.5102070142458037,1,8B-L2m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,L3,15.0,lumbar,-0.0416110991849446,1,8C-L3m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,L4,16.0,lumbar,0.0526030136120969,1,8D-L4-1m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,L1,13.0,lumbar,-0.53615690444601,1,2C-2ML1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,L2,14.0,lumbar,-0.0061917879428933,1,2D-1FL2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,L4,16.0,lumbar,-0.36351494081128904,2,3A-1FL4 | 4D-1FL4
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,T10,10.0,thoracic,0.0862088220931159,1,3D-1FT10
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,T10,10.0,thoracic,-0.1104693595051467,1,4A-2MT10
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,T5,5.0,thoracic,-0.4339674450471822,1,4C-2MT5
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,L2,14.0,lumbar,-0.2518316333699633,1,5A-2ML2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,T7,7.0,thoracic,-0.0186151120149993,1,5C-1FT7
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,L1,13.0,lumbar,-0.343702145814007,1,6A-1FL1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,L3,15.0,lumbar,0.1808149127423166,1,6B-2ML3
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,T12,12.0,thoracic,0.307184537895777,1,7C-1FT12
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,T12,12.0,thoracic,-0.1142308606499147,1,7D-2MT12
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,T5,5.0,thoracic,-0.3502682943240442,1,8A-1FT5
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,L4,16.0,lumbar,-0.2202058524864324,1,8C-2ML4
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,T7,7.0,thoracic,-0.2403465028908127,1,8D-2MT7
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M1,M,T7,7.0,thoracic,-0.2227925751801084,1,2B- 1MT7
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M1,M,L1,13.0,lumbar,-0.1008166945957312,1,2C- M1L1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M1,M,L4,16.0,lumbar,-0.052868136051328,1,2D- M1L4
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,L1,13.0,lumbar,3.1295106574196154,1,1B-L1m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,L2,14.0,lumbar,1.9869640733546132,1,1D-L2m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,L3,15.0,lumbar,-2.815229092757349,1,2C-L3m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,L4,16.0,lumbar,2.522102862096375,1,2D-L4m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,L5,17.0,lumbar,0.9701514445976612,1,3A-L5m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,T10,10.0,thoracic,2.648290652093074,1,3B-T10m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m2,F,T12,12.0,thoracic,1.6146377826978195,2,4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m1,F,T5,5.0,thoracic,-3.057413678421625,1,4C-T5m1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m1,F,T7,7.0,thoracic,2.278079681865705,1,4D-T7m1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m1,F,T10,10.0,thoracic,-2.370638900980332,1,5A-T10m1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,T12,12.0,thoracic,-1.696486560033712,1,5C-T12
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,T10,10.0,thoracic,-2.656047159251969,1,5D-T10
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,T7,7.0,thoracic,1.3008219050094354,1,6A-T7
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,T5,5.0,thoracic,1.4308120363538777,1,6B-T5
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,L1,13.0,lumbar,2.0640423070532776,1,7C-L1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,L2,14.0,lumbar,-2.76615815233982,1,7D-L2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250626_M1,M,L3,15.0,lumbar,0.22616517849780132,1,8A-L3
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m1,F,L2,14.0,lumbar,-1.8134318666070823,1,8B-L2m1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m1,F,L3,15.0,lumbar,0.4634086659634775,1,8C-L3m1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250703_m1,F,L4,16.0,lumbar,0.6907597285411597,1,8D-L4-1m1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,L1,13.0,lumbar,2.870273778877859,1,2C-2ML1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,L2,14.0,lumbar,-2.571744484355243,1,2D-1FL2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,L4,16.0,lumbar,1.0665485414176774,2,3A-1FL4 | 4D-1FL4
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,T10,10.0,thoracic,-3.098140283518404,1,3D-1FT10
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,T10,10.0,thoracic,-2.007763538138562,1,4A-2MT10
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,T5,5.0,thoracic,2.7946781473965103,1,4C-2MT5
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,L2,14.0,lumbar,2.7295913548044552,1,5A-2ML2
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,T7,7.0,thoracic,-2.5727964703468444,1,5C-1FT7
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,L1,13.0,lumbar,1.8314332619129767,1,6A-1FL1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,L3,15.0,lumbar,-3.1004740532530377,1,6B-2ML3
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,T12,12.0,thoracic,2.218568462088932,1,7C-1FT12
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,T12,12.0,thoracic,2.448540068758384,1,7D-2MT12
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_1F,F,T5,5.0,thoracic,-2.2312555531132503,1,8A-1FT5
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,L4,16.0,lumbar,2.401973834299689,1,8C-2ML4
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20250811_2M,M,T7,7.0,thoracic,-1.570888547537841,1,8D-2MT7
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20251003_M1,M,T7,7.0,thoracic,0.0914780388555271,1,2B- 1MT7
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20251003_M1,M,L1,13.0,lumbar,2.558299603285072,1,2C- M1L1
+CWT_pyBOAT,phase_shift_angle_radians,secondary_circular,True,20251003_M1,M,L4,16.0,lumbar,-1.123230642696733,1,2D- M1L4

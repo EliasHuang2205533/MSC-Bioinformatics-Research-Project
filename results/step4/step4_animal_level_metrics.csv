@@ -1,0 +1,199 @@
+method,metric,analysis_role,circular,animal_id,sex,tissue,value,n_recordings_collapsed,n_anatomical_units_collapsed,recording_ids
+CWT_pyBOAT,pre_period_hours,primary,False,20250703_m2,F,DRG,24.617985030045258,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,pre_period_hours,primary,False,20250626_M1,M,SCN,24.788944723618012,1,1,1C-SCN
+CWT_pyBOAT,pre_period_hours,primary,False,20250703_m1,F,DRG,25.03738974593238,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+CWT_pyBOAT,pre_period_hours,primary,False,20250626_M1,M,DRG,24.219981024001047,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+CWT_pyBOAT,pre_period_hours,primary,False,20250703_m1,F,SCN,24.324770706680177,1,1,6C-SCNmm1
+CWT_pyBOAT,pre_period_hours,primary,False,20250703_m2,F,SCN,24.754260814562244,2,2,7A-SCNmm2 | 7B-SCNcm2
+CWT_pyBOAT,pre_period_hours,primary,False,20250728_M1,F,SCN,24.894472361808965,2,2,6A-SCNrM1 | 7A-SCNcM1
+CWT_pyBOAT,pre_period_hours,primary,False,20250728_M2,F,SCN,24.90849351653364,2,2,6B-SCNrM2 | 7B-SCNcM2
+CWT_pyBOAT,pre_period_hours,primary,False,20250811_1F,F,SCN,25.190638507221344,1,1,1A-1FSCN
+CWT_pyBOAT,pre_period_hours,primary,False,20250811_2M,M,SCN,24.971711705379967,1,1,1B-2MSCN
+CWT_pyBOAT,pre_period_hours,primary,False,20250811_3F,F,SCN,24.29033278279502,1,1,1C-3FSCN
+CWT_pyBOAT,pre_period_hours,primary,False,20250811_4F,F,SCN,24.337069965210596,1,1,1D-4FSCN
+CWT_pyBOAT,pre_period_hours,primary,False,20250811_2M,M,DRG,24.843061461151834,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+CWT_pyBOAT,pre_period_hours,primary,False,20250811_1F,F,DRG,26.049126752644263,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+CWT_pyBOAT,pre_period_hours,primary,False,20251003_M1,M,SCN,24.63028428857567,1,1,2A- M1SCn
+CWT_pyBOAT,pre_period_hours,primary,False,20251003_M1,M,DRG,24.072881891977293,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+CWT_pyBOAT,pre_period_hours,primary,False,20251003_M2,M,SCN,31.9999999999999,1,1,4A- M2SCN
+CWT_pyBOAT,pre_period_hours,primary,False,20251003_M3,M,SCN,24.941701514565757,1,1,4B-M3SCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20250703_m2,F,DRG,24.424640685947146,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,post_period_hours,descriptive,False,20250626_M1,M,SCN,25.814456899883957,1,1,1C-SCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20250703_m1,F,DRG,24.941947499736365,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+CWT_pyBOAT,post_period_hours,descriptive,False,20250626_M1,M,DRG,25.175879396984847,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+CWT_pyBOAT,post_period_hours,descriptive,False,20250703_m1,F,SCN,24.513687317707344,1,1,6C-SCNmm1
+CWT_pyBOAT,post_period_hours,descriptive,False,20250703_m2,F,SCN,26.49214604490978,2,2,7A-SCNmm2 | 7B-SCNcm2
+CWT_pyBOAT,post_period_hours,descriptive,False,20250728_M1,F,SCN,25.2814070351758,2,2,6A-SCNrM1 | 7A-SCNcM1
+CWT_pyBOAT,post_period_hours,descriptive,False,20250728_M2,F,SCN,24.97343360157423,2,2,6B-SCNrM2 | 7B-SCNcM2
+CWT_pyBOAT,post_period_hours,descriptive,False,20250811_1F,F,SCN,24.887584777031936,1,1,1A-1FSCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20250811_2M,M,SCN,25.100115964437496,1,1,1B-2MSCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20250811_3F,F,SCN,25.738693467336603,1,1,1C-3FSCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20250811_4F,F,SCN,25.198510032680808,1,1,1D-4FSCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20250811_2M,M,DRG,25.949748743718512,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+CWT_pyBOAT,post_period_hours,descriptive,False,20250811_1F,F,DRG,25.668341708542634,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+CWT_pyBOAT,post_period_hours,descriptive,False,20251003_M1,M,SCN,23.936114137119088,1,1,2A- M1SCn
+CWT_pyBOAT,post_period_hours,descriptive,False,20251003_M1,M,DRG,24.395122465474152,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+CWT_pyBOAT,post_period_hours,descriptive,False,20251003_M2,M,SCN,21.296201286150968,1,1,4A- M2SCN
+CWT_pyBOAT,post_period_hours,descriptive,False,20251003_M3,M,SCN,24.26130653266324,1,1,4B-M3SCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,DRG,-0.11598200794180791,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,SCN,1.025512176265945,1,1,1C-SCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,DRG,0.13332396246969402,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250626_M1,M,DRG,0.33429384685666363,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m1,F,SCN,0.1889166110271674,1,1,6C-SCNmm1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250703_m2,F,SCN,1.737885230347537,2,2,7A-SCNmm2 | 7B-SCNcm2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250728_M1,F,SCN,0.3869346733668326,2,2,6A-SCNrM1 | 7A-SCNcM1
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250728_M2,F,SCN,0.06494008504058968,2,2,6B-SCNrM2 | 7B-SCNcM2
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,SCN,-0.30305373018940784,1,1,1A-1FSCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,SCN,0.12840425905752895,1,1,1B-2MSCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_3F,F,SCN,1.4483606845415835,1,1,1C-3FSCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_4F,F,SCN,0.8614400674702125,1,1,1D-4FSCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_2M,M,DRG,0.9209684787574197,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20250811_1F,F,DRG,-0.3807850441016285,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M1,M,SCN,-0.6941701514565821,1,1,2A- M1SCn
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M1,M,DRG,0.32224057349685964,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M2,M,SCN,-10.703798713848933,1,1,4A- M2SCN
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,False,20251003_M3,M,SCN,-0.6803949819025163,1,1,4B-M3SCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250703_m2,F,DRG,2.362002204802304,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250626_M1,M,SCN,0.17723947394313197,1,1,1C-SCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250703_m1,F,DRG,3.0431890468534375,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250626_M1,M,DRG,2.2678656529346233,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250703_m1,F,SCN,-0.6520007970580579,1,1,6C-SCNmm1
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250703_m2,F,SCN,0.16766427216797197,2,2,7A-SCNmm2 | 7B-SCNcm2
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250728_M1,F,SCN,-0.5515473483010602,2,2,6A-SCNrM1 | 7A-SCNcM1
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250728_M2,F,SCN,-0.8274817496352895,2,2,6B-SCNrM2 | 7B-SCNcM2
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250811_1F,F,SCN,0.9353727255037327,1,1,1A-1FSCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250811_2M,M,SCN,0.28035915747481255,1,1,1B-2MSCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250811_3F,F,SCN,-0.19858983929483282,1,1,1C-3FSCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250811_4F,F,SCN,-0.6324457055336623,1,1,1D-4FSCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250811_2M,M,DRG,3.076614428101157,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20250811_1F,F,DRG,2.9460509216386384,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20251003_M1,M,SCN,-2.270424445241936,1,1,2A- M1SCn
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20251003_M1,M,DRG,-0.4117454617108041,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20251003_M2,M,SCN,0.07081073675466598,1,1,4A- M2SCN
+CWT_pyBOAT,phase_shift_angle_radians,primary_circular,True,20251003_M3,M,SCN,-0.7207871256138603,1,1,4B-M3SCN
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,DRG,2.5846183387602806,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,SCN,12.907307772857232,1,1,1C-SCN
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,DRG,1.8670225852066087,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,pre_amplitude_counts,descriptive,False,20250626_M1,M,DRG,2.5475562118463233,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,pre_amplitude_counts,descriptive,False,20250703_m1,F,SCN,17.55889600892925,1,1,6C-SCNmm1
+STFT,pre_amplitude_counts,descriptive,False,20250703_m2,F,SCN,8.26240965857026,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,pre_amplitude_counts,descriptive,False,20250728_M1,F,SCN,9.836501318101174,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,pre_amplitude_counts,descriptive,False,20250728_M2,F,SCN,16.47162578700535,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,SCN,4.033495917045797,1,1,1A-1FSCN
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,SCN,2.0660719240368595,1,1,1B-2MSCN
+STFT,pre_amplitude_counts,descriptive,False,20250811_3F,F,SCN,25.870383258768534,1,1,1C-3FSCN
+STFT,pre_amplitude_counts,descriptive,False,20250811_4F,F,SCN,13.783337504581958,1,1,1D-4FSCN
+STFT,pre_amplitude_counts,descriptive,False,20250811_2M,M,DRG,2.58065270026509,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,pre_amplitude_counts,descriptive,False,20250811_1F,F,DRG,2.4311596003557963,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,pre_amplitude_counts,descriptive,False,20251003_M1,M,SCN,6.909787722722581,1,1,2A- M1SCn
+STFT,pre_amplitude_counts,descriptive,False,20251003_M1,M,DRG,6.0820975284585455,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,pre_amplitude_counts,descriptive,False,20251003_M2,M,SCN,0.31943599106781295,1,1,4A- M2SCN
+STFT,pre_amplitude_counts,descriptive,False,20251003_M3,M,SCN,1.6844170937937033,1,1,4B-M3SCN
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,DRG,8.140409895561257,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,SCN,4.663528493528032,1,1,1C-SCN
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,DRG,5.399920881108125,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,post_amplitude_counts,descriptive,False,20250626_M1,M,DRG,4.696821877052701,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,post_amplitude_counts,descriptive,False,20250703_m1,F,SCN,6.387710251693571,1,1,6C-SCNmm1
+STFT,post_amplitude_counts,descriptive,False,20250703_m2,F,SCN,1.8762882356143264,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,post_amplitude_counts,descriptive,False,20250728_M1,F,SCN,2.5340284051506914,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,post_amplitude_counts,descriptive,False,20250728_M2,F,SCN,3.546846438636408,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,SCN,1.892891788189183,1,1,1A-1FSCN
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,SCN,2.847223704462633,1,1,1B-2MSCN
+STFT,post_amplitude_counts,descriptive,False,20250811_3F,F,SCN,8.334300247972548,1,1,1C-3FSCN
+STFT,post_amplitude_counts,descriptive,False,20250811_4F,F,SCN,6.896736327024854,1,1,1D-4FSCN
+STFT,post_amplitude_counts,descriptive,False,20250811_2M,M,DRG,10.133257684227633,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,post_amplitude_counts,descriptive,False,20250811_1F,F,DRG,14.811853951943604,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,post_amplitude_counts,descriptive,False,20251003_M1,M,SCN,1.694434381334203,1,1,2A- M1SCn
+STFT,post_amplitude_counts,descriptive,False,20251003_M1,M,DRG,6.672165557262643,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,post_amplitude_counts,descriptive,False,20251003_M2,M,SCN,0.3076192318139172,1,1,4A- M2SCN
+STFT,post_amplitude_counts,descriptive,False,20251003_M3,M,SCN,0.8318144556451535,1,1,4B-M3SCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250703_m2,F,DRG,2.9104597196595825,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250626_M1,M,SCN,0.36130915723067847,1,1,1C-SCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250703_m1,F,DRG,1.2194876072565994,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250626_M1,M,DRG,2.631875325583681,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250703_m1,F,SCN,0.36378769191669114,1,1,6C-SCNmm1
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250703_m2,F,SCN,0.24155164371684412,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250728_M1,F,SCN,0.3508976316213457,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250728_M2,F,SCN,0.19750096977791734,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250811_1F,F,SCN,0.4692930963905797,1,1,1A-1FSCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250811_2M,M,SCN,1.3780854728907481,1,1,1B-2MSCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250811_3F,F,SCN,0.32215604092945593,1,1,1C-3FSCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250811_4F,F,SCN,0.5003676594824867,1,1,1D-4FSCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250811_2M,M,DRG,4.125774702251841,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20250811_1F,F,DRG,5.029138432997423,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20251003_M1,M,SCN,0.24522234970578305,1,1,2A- M1SCn
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20251003_M1,M,DRG,1.0970171928422932,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20251003_M2,M,SCN,0.9630074268888906,1,1,4A- M2SCN
+STFT,amplitude_ratio_post_over_pre,descriptive,False,20251003_M3,M,SCN,0.4938292651564773,1,1,4B-M3SCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,DRG,0.9216090142082088,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,SCN,-1.0180212959222752,1,1,1C-SCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,DRG,0.1950427743310929,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250626_M1,M,DRG,0.9676966436419291,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m1,F,SCN,-1.0111848454751275,1,1,6C-SCNmm1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250703_m2,F,SCN,-1.4329686799474888,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250728_M1,F,SCN,-1.1550801849928236,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250728_M2,F,SCN,-1.6435282920441707,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,SCN,-0.7565277667298119,1,1,1A-1FSCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,SCN,0.32069519743911123,1,1,1B-2MSCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_3F,F,SCN,-1.1327192516581805,1,1,1C-3FSCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_4F,F,SCN,-0.6924121318095074,1,1,1D-4FSCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_2M,M,DRG,1.4024625415026297,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20250811_1F,F,DRG,1.6152486837541824,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M1,M,SCN,-1.4055899301922274,1,1,2A- M1SCn
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M1,M,DRG,0.0925948537703642,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M2,M,SCN,-0.037694154971912024,1,1,4A- M2SCN
+STFT,amplitude_log_ratio_post_over_pre,primary,False,20251003_M3,M,SCN,-0.705565438625718,1,1,4B-M3SCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,DRG,-0.20902167233477542,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,SCN,-0.26856770222118237,1,1,1C-SCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,DRG,-0.3523997595292011,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250626_M1,M,DRG,-0.3894323974691649,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m1,F,SCN,-0.24910887163121684,1,1,6C-SCNmm1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250703_m2,F,SCN,-0.33247765150895603,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250728_M1,F,SCN,-0.30444891645605365,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250728_M2,F,SCN,-0.3740852590347081,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,SCN,-0.34507887471797416,1,1,1A-1FSCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,SCN,-0.3372724382308298,1,1,1B-2MSCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_3F,F,SCN,-0.1924820234404753,1,1,1C-3FSCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_4F,F,SCN,-0.21580206168825447,1,1,1D-4FSCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_2M,M,DRG,-0.2999127961859742,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,pre_envelope_log_rate_per_day,secondary,False,20250811_1F,F,DRG,-0.27568948061174453,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M1,M,SCN,-0.35848329411410873,1,1,2A- M1SCn
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M1,M,DRG,-0.17995530767104906,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M2,M,SCN,-0.14064425803919284,1,1,4A- M2SCN
+STFT,pre_envelope_log_rate_per_day,secondary,False,20251003_M3,M,SCN,-0.35205766591791876,1,1,4B-M3SCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,DRG,-0.4368660959966774,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,SCN,-0.39164062833532265,1,1,1C-SCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,DRG,-0.43137590044086355,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250626_M1,M,DRG,-0.3466500116072186,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m1,F,SCN,-0.5163865778281272,1,1,6C-SCNmm1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250703_m2,F,SCN,-0.5596481624893272,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250728_M1,F,SCN,-0.15676763960397933,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,post_envelope_log_rate_per_day,secondary,False,20250728_M2,F,SCN,-0.2999251933876964,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,SCN,-0.4939056531791986,1,1,1A-1FSCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,SCN,-0.4981322668888807,1,1,1B-2MSCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_3F,F,SCN,-0.28894794736271895,1,1,1C-3FSCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_4F,F,SCN,-0.2729702291564112,1,1,1D-4FSCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_2M,M,DRG,-0.49454769797253445,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,post_envelope_log_rate_per_day,secondary,False,20250811_1F,F,DRG,-0.4749363704232108,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M1,M,SCN,0.06264304198715631,1,1,2A- M1SCn
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M1,M,DRG,-0.4027478828511575,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M2,M,SCN,-0.19796293862026312,1,1,4A- M2SCN
+STFT,post_envelope_log_rate_per_day,secondary,False,20251003_M3,M,SCN,-0.16153314720545692,1,1,4B-M3SCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,DRG,-0.2037128800838712,8,7,1B-L1m2 | 1D-L2m2 | 2C-L3m2 | 2D-L4m2 | 3A-L5m2 | 3B-T10m2 | 4B-T12m2 | 5B-T12m2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,SCN,-0.12307292611414028,1,1,1C-SCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,DRG,-0.03633521352251798,6,6,4C-T5m1 | 4D-T7m1 | 5A-T10m1 | 8B-L2m1 | 8C-L3m1 | 8D-L4-1m1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250626_M1,M,DRG,0.06449004086483573,7,7,5C-T12 | 5D-T10 | 6A-T7 | 6B-T5 | 7C-L1 | 7D-L2 | 8A-L3
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m1,F,SCN,-0.2672777061969104,1,1,6C-SCNmm1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250703_m2,F,SCN,-0.22717051098037122,2,2,7A-SCNmm2 | 7B-SCNcm2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250728_M1,F,SCN,0.1476812768520743,2,2,6A-SCNrM1 | 7A-SCNcM1
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250728_M2,F,SCN,0.07416006564701169,2,2,6B-SCNrM2 | 7B-SCNcM2
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,SCN,-0.14882677846122444,1,1,1A-1FSCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,SCN,-0.16085982865805087,1,1,1B-2MSCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_3F,F,SCN,-0.09646592392224365,1,1,1C-3FSCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_4F,F,SCN,-0.057168167468156755,1,1,1D-4FSCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_2M,M,DRG,-0.2302761776886226,8,8,2C-2ML1 | 4A-2MT10 | 4C-2MT5 | 5A-2ML2 | 6B-2ML3 | 7D-2MT12 | 8C-2ML4 | 8D-2MT7
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20250811_1F,F,DRG,-0.018615112014999324,8,7,2D-1FL2 | 3A-1FL4 | 3D-1FT10 | 4D-1FL4 | 5C-1FT7 | 6A-1FL1 | 7C-1FT12 | 8A-1FT5
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M1,M,SCN,0.42112633610126504,1,1,2A- M1SCn
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M1,M,DRG,-0.10081669459573125,3,3,2B- 1MT7 | 2C- M1L1 | 2D- M1L4
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M2,M,SCN,-0.057318680581070286,1,1,4A- M2SCN
+STFT,envelope_log_rate_change_post_minus_pre_per_day,secondary,False,20251003_M3,M,SCN,0.19052451871246184,1,1,4B-M3SCN

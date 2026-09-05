@@ -1,0 +1,4 @@
+method,amplitude_correction_factor,estimation_method,ratio_median_sensitivity_check,n_valid_calibration_estimates,n_failed_calibration_estimates
+STFT,1.018727798664016,OLS_through_origin,1.0359615185090862,576,0
+Hilbert,1.047259011916494,OLS_through_origin,1.0097449878626108,576,0
+CWT_pyBOAT,1.0057150195235316,OLS_through_origin,1.0049061018797243,576,0

@@ -1,0 +1,4 @@
+method,metric,analysis_role,n_animals,n_animal_level_observations,fixed_effect_slope_per_spinal_segment,bootstrap_95ci_low,bootstrap_95ci_high,within_animal_permutation_p,n_permutations,bh_q_primary_family
+CWT_pyBOAT,baseline_period_hours,primary,6,37,-0.10437438134649436,-0.17911938944004052,0.00040211845802823586,0.03914804259787011,20000,0.23488825558722065
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,6,37,0.07405223192761516,-0.03491595091259957,0.15641550205675137,0.13004349782510874,20000,0.3125
+STFT,amplitude_log_ratio_post_over_pre,primary,6,37,-0.019743110011969697,-0.061260139543008844,0.021347744792067046,0.49712514374281286,20000,0.5965501724913754

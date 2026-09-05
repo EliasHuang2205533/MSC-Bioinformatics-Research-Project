@@ -1,0 +1,16 @@
+scenario_number,scenario_id,profile_type,direction,duration_hours,baseline_period_hours,target_period_hours,treatment_locked
+1,constant_24h,constant,none,,24.0,24.0,False
+2,linear_21to27h,linear_chirp,lengthening,,21.0,27.0,False
+3,linear_27to21h,linear_chirp,shortening,,27.0,21.0,False
+4,sustained_lengthening_24h,causal_sustained_transition,lengthening,24.0,24.0,27.0,True
+5,transient_lengthening_24h,causal_transient_pulse,lengthening,24.0,24.0,27.0,True
+6,sustained_shortening_24h,causal_sustained_transition,shortening,24.0,24.0,21.0,True
+7,transient_shortening_24h,causal_transient_pulse,shortening,24.0,24.0,21.0,True
+8,sustained_lengthening_48h,causal_sustained_transition,lengthening,48.0,24.0,27.0,True
+9,transient_lengthening_48h,causal_transient_pulse,lengthening,48.0,24.0,27.0,True
+10,sustained_shortening_48h,causal_sustained_transition,shortening,48.0,24.0,21.0,True
+11,transient_shortening_48h,causal_transient_pulse,shortening,48.0,24.0,21.0,True
+12,sustained_lengthening_72h,causal_sustained_transition,lengthening,72.0,24.0,27.0,True
+13,transient_lengthening_72h,causal_transient_pulse,lengthening,72.0,24.0,27.0,True
+14,sustained_shortening_72h,causal_sustained_transition,shortening,72.0,24.0,21.0,True
+15,transient_shortening_72h,causal_transient_pulse,shortening,72.0,24.0,21.0,True

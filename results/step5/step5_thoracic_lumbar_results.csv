@@ -1,0 +1,4 @@
+method,metric,analysis_role,n_animals,thoracic_mean,lumbar_mean,mean_difference_lumbar_minus_thoracic,median_difference_lumbar_minus_thoracic,bootstrap_95ci_low,bootstrap_95ci_high,exact_sign_flip_p,bh_q_primary_family
+CWT_pyBOAT,baseline_period_hours,primary,6,25.144967260545073,24.638319804148875,-0.5066474563961988,-0.33109603963875145,-1.05166859940729,-0.012496046666901621,0.15625,0.3125
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,6,-0.14635092712981956,0.33890606880556656,0.4852569959353861,0.6285843553431447,-0.17273283667756112,1.1418877604807198,0.25,0.375
+STFT,amplitude_log_ratio_post_over_pre,primary,6,0.9061452918650393,0.8745522459290976,-0.03159304593594161,0.05177559289402012,-0.4187464007866289,0.3488860142910602,0.96875,0.96875

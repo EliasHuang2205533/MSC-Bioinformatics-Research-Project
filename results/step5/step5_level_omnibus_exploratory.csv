@@ -1,0 +1,4 @@
+method,metric,analysis_role,n_animals,n_animal_level_observations,partial_f_statistic,df_numerator,df_denominator,within_animal_permutation_p,n_permutations
+CWT_pyBOAT,baseline_period_hours,primary,6,37,0.7230703854031223,7,24,0.6452677366131694,20000
+CWT_pyBOAT,period_change_hours_post_minus_pre,primary,6,37,0.7327493477764236,7,24,0.6460176991150443,20000
+STFT,amplitude_log_ratio_post_over_pre,primary,6,37,0.9828117624163478,7,24,0.46662666866656666,20000

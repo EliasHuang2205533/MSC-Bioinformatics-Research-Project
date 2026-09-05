@@ -1,0 +1,54 @@
+anchor_index,anchor_recording_uid,anchor_recording_id,tissue,pre_period_status,post_period_status,pre_amplitude_envelope_status,post_amplitude_envelope_status,phase_shift_status,n_synthetic,n_exact_anchor,mean_interpolation_fraction,max_interpolation_fraction
+1,250625 to 250728::1B-L1m2_Raw.csv,1B-L1m2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+2,250625 to 250728::1C-SCN_Raw.csv,1C-SCN,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+3,250625 to 250728::1D-L2m2_Raw.csv,1D-L2m2,DRG,difficult,difficult,difficult,difficult,difficult,10,1,0.175,0.35
+4,250625 to 250728::2C-L3m2_Raw.csv,2C-L3m2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+5,250625 to 250728::3A-L5m2_Raw.csv,3A-L5m2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+6,250625 to 250728::3B-T10m2_Raw.csv,3B-T10m2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+7,250625 to 250728::4B-T12m2_Raw.csv,4B-T12m2,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+8,250625 to 250728::4C-T5m1_Raw.csv,4C-T5m1,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+9,250625 to 250728::4D-T7m1_Raw.csv,4D-T7m1,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+10,250625 to 250728::5A-T10m1_Raw.csv,5A-T10m1,DRG,ineligible,ineligible,ineligible,ineligible,ineligible,10,1,0.175,0.35
+11,250625 to 250728::5B-T12m2_Raw.csv,5B-T12m2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+12,250625 to 250728::5C-T12_Raw.csv,5C-T12,DRG,difficult,eligible,eligible,eligible,difficult,10,1,0.175,0.35
+13,250625 to 250728::5D-T10_Raw.csv,5D-T10,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+14,250625 to 250728::6A-T7_Raw.csv,6A-T7,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+15,250625 to 250728::6B-T5_Raw.csv,6B-T5,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+16,250625 to 250728::6C-SCNmm1_Raw.csv,6C-SCNmm1,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+17,250625 to 250728::7A-SCNmm2_Raw.csv,7A-SCNmm2,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+18,250625 to 250728::7B-SCNcm2_Raw.csv,7B-SCNcm2,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+19,250625 to 250728::7C-L1_Raw.csv,7C-L1,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+20,250625 to 250728::7D-L2_Raw.csv,7D-L2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+21,250625 to 250728::8A-L3_Raw.csv,8A-L3,DRG,difficult,difficult,difficult,difficult,difficult,10,1,0.175,0.35
+22,250625 to 250728::8B-L2m1_Raw.csv,8B-L2m1,DRG,eligible,eligible,difficult,eligible,eligible,10,1,0.175,0.35
+23,250625 to 250728::8C-L3m1_Raw.csv,8C-L3m1,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+24,250625 to 250728::8D-L4-1m1_Raw.csv,8D-L4-1m1,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+25,250728::6A-SCNrM1_Raw.csv,6A-SCNrM1,SCN,eligible,difficult,eligible,difficult,difficult,10,1,0.175,0.35
+26,250728::6B-SCNrM2_Raw.csv,6B-SCNrM2,SCN,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
+27,250728::7A-SCNcM1_Raw.csv,7A-SCNcM1,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+28,250728::7B-SCNcM2_Raw.csv,7B-SCNcM2,SCN,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
+29,250811::1A-1FSCN_Raw.csv,1A-1FSCN,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+30,250811::1B-2MSCN_Raw.csv,1B-2MSCN,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+31,250811::1C-3FSCN_Raw.csv,1C-3FSCN,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+32,250811::1D-4FSCN_Raw.csv,1D-4FSCN,SCN,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+33,250811::2C-2ML1_Raw.csv,2C-2ML1,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+34,250811::2D-1FL2_Raw.csv,2D-1FL2,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+35,250811::3A-1FL4_Raw.csv,3A-1FL4,DRG,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
+36,250811::3D-1FT10_Raw.csv,3D-1FT10,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+37,250811::4A-2MT10_Raw.csv,4A-2MT10,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+38,250811::4C-2MT5_Raw.csv,4C-2MT5,DRG,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
+39,250811::4D-1FL4_Raw.csv,4D-1FL4,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+40,250811::5A-2ML2_Raw.csv,5A-2ML2,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+41,250811::5C-1FT7_Raw.csv,5C-1FT7,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+42,250811::6A-1FL1_Raw.csv,6A-1FL1,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+43,250811::6B-2ML3_Raw.csv,6B-2ML3,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+44,250811::7C-1FT12_Raw.csv,7C-1FT12,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+45,250811::7D-2MT12_Raw.csv,7D-2MT12,DRG,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
+46,250811::8A-1FT5_Raw.csv,8A-1FT5,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+47,250811::8C-2ML4_Raw.csv,8C-2ML4,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+48,250811::8D-2MT7_Raw.csv,8D-2MT7,DRG,eligible,eligible,eligible,eligible,eligible,10,1,0.175,0.35
+49,251003::2A- M1SCn_Raw.csv,2A- M1SCn,SCN,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
+50,251003::2B- 1MT7_Raw.csv,2B- 1MT7,DRG,eligible,eligible,difficult,eligible,eligible,10,1,0.175,0.35
+51,251003::2C- M1L1_Raw.csv,2C- M1L1,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+52,251003::2D- M1L4_Raw.csv,2D- M1L4,DRG,difficult,eligible,difficult,eligible,difficult,10,1,0.175,0.35
+53,251003::4B-M3SCN_Raw.csv,4B-M3SCN,SCN,eligible,eligible,eligible,difficult,eligible,10,1,0.175,0.35
